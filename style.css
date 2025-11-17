@@ -12,47 +12,30 @@ body   body {
     color: #1b5e20;
     text-shadow: 1px 1px 2px #9ccc65;
   }
- /* TREE STRUCTURE */
-.tree ul {
-  padding-top: 25px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
+  .tree ul {
+    position: relative;
+    padding-top: 20px;
+    list-style-type: none;
+    text-align: center;
+  }
   .tree li {
     display: inline-block;
     vertical-align: top;
     position: relative;
     padding: 20px 5px 0 5px;
-}
-
-/* Vertical Line */
-.tree li::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  border-left: 2px solid #3498db;
-  height: 25px;
-}
-
-/* Horizontal Line connecting siblings */
-.tree li::after {
-  content: '';
-  position: absolute;
-  top: 25px;
-  left: -20px;
-  right: -20px;
-  border-top: 2px solid #3498db;
-}
-
-/* Remove lines when single child */
-.tree li:only-child::after,
-.tree li:only-child::before {
-  display: none;
-}
+  }
+  .tree li::before, .tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-top: 2px solid #4caf50;
+    width: 50%;
+    height: 20px;
+  }
+  .tree li::before { right: 50%; }
+  .tree li::after { left: 50%; border-left: 2px solid #4caf50; }
+  .tree li:only-child::before,
+  .tree li:only-child::after { display: none; }
 
   .member {
     border: 2px solid #81c784;
@@ -72,14 +55,14 @@ body   body {
     box-shadow: 0 0 15px #66bb6a;
     cursor: pointer;
   }
-
-  .member img {
+ .member img {
     width: 100%;
     height: 100px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 5px;
   }
+
   .hidden {
     display: none;
   }
@@ -149,5 +132,6 @@ body   body {
 .tree ul ul {
   display: none;
 }
+
 
 
