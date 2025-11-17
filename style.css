@@ -1,7 +1,89 @@
 /* Google Bengali Font (Optional but Recommended) */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap');
 
-body {
+body   body {
+    font-family: "Noto Sans Bengali", sans-serif;
+    background: linear-gradient(to bottom right, #e8f5e9, #f1f8e9);
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #1b5e20;
+    text-shadow: 1px 1px 2px #9ccc65;
+  }
+ /* TREE STRUCTURE */
+.tree ul {
+  padding-top: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+  .tree li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 20px 5px 0 5px;
+}
+
+/* Vertical Line */
+.tree li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid #3498db;
+  height: 25px;
+}
+
+/* Horizontal Line connecting siblings */
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: -20px;
+  right: -20px;
+  border-top: 2px solid #3498db;
+}
+
+/* Remove lines when single child */
+.tree li:only-child::after,
+.tree li:only-child::before {
+  display: none;
+}
+
+  .member {
+    border: 2px solid #81c784;
+    border-radius: 12px;
+    background: white;
+    color: #1b5e20;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    padding: 8px;
+    width: 120px;
+  }
+  .member:hover {
+    background: #c8e6c9;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #66bb6a;
+    cursor: pointer;
+  }
+
+  .member img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+
+  .hidden {
+    display: none;
+  }
   font-family: 'Noto Sans Bengali', sans-serif;
   background: linear-gradient(to bottom right, #eef4f7;)
   margin: 0;
@@ -54,66 +136,7 @@ body {
   background: #217dbb;
 }
 
-/* TREE STRUCTURE */
-.tree ul {
-  padding-top: 25px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
 
-  .tree li {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    padding: 20px 5px 0 5px;
-}
-
-/* Vertical Line */
-.tree li::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  border-left: 2px solid #3498db;
-  height: 25px;
-}
-
-/* Horizontal Line connecting siblings */
-.tree li::after {
-  content: '';
-  position: absolute;
-  top: 25px;
-  left: -20px;
-  right: -20px;
-  border-top: 2px solid #3498db;
-}
-
-/* Remove lines when single child */
-.tree li:only-child::after,
-.tree li:only-child::before {
-  display: none;
-}
-
-/* MEMBER CARD */
-  .member {
-    border: 2px solid #81c784;
-    border-radius: 12px;
-    background: white;
-    color: #1b5e20;
-    font-weight: bold;
-    display: inline-block;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-    padding: 8px;
-    width: 120px;
-  }
-
-.member:hover {
-  transform: scale(1.05);
-  border-color: #1d6fa5;
-}
 
 /* Profile Photos */
 .member img {
@@ -134,3 +157,4 @@ body {
 .tree ul ul {
   display: none;
 }
+
