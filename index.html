@@ -1,36 +1,120 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>মরহুম ইসমাইল মোড়ল পরিবার বৃক্ষ</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>পরিবার বৃক্ষ (ছবিসহ ও কলাপ্সিবল)</title>
+<style>
+  body {
+    font-family: "Noto Sans Bengali", sans-serif;
+    background: linear-gradient(to bottom right, #e8f5e9, #f1f8e9);
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #1b5e20;
+    text-shadow: 1px 1px 2px #9ccc65;
+  }
+  .tree ul {
+    position: relative;
+    padding-top: 20px;
+    list-style-type: none;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+  }
+  .tree li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 20px 5px 0 5px;
+  }
+  .tree li::before, .tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-top: 2px solid #4caf50;
+    width: 50%;
+    height: 20px;
+  }
+  .tree li::before { right: 50%; }
+  .tree li::after { left: 50%; border-left: 2px solid #4caf50; }
+  .tree li:only-child::before,
+  .tree li:only-child::after { display: none; }
+
+  .member {
+    border: 2px solid #81c784;
+    border-radius: 12px;
+    background: white;
+    color: #1b5e20;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    padding: 8px;
+    width: 120px;
+  }
+  .member:hover {
+    background: #c8e6c9;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #66bb6a;
+    cursor: pointer;
+  }
+
+  .member img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
 </head>
 <body>
- 
-<h1>মরহুম ইসমাইল মোড়ল পরিবার বৃক্ষ 🌳</h1>
+
+
+
+<h1>মন্ডল পরিবার বৃক্ষ 🌳</h1>
 
 <div class="tree">
 
-     <ul>
+<ul>
 <li>
-          <div class="member" onclick="toggleBranch(this)">
-            <img src="images/om.jpg" alt="মরহুম ইসমাইল মোড়ল">
-            <span>মরহুম ইসমাইল মোড়ল</span>
-          </div></li>
+        <div class="member" onclick="toggleBranch(this)">
+        <img src="images/om.jpg""text=মরহুম লুদাই মোড়ল" 
+           alt="মরহুম লুদাই মোড়ল"><span>মরহুম লুদাই মোড়ল</span>
+        </div>
 
 
 
-              <ul>
-                <li>
-                  <div class="member" onclick="toggleBranch(this)">
-                    <img src="images/om.jpg" alt="মরহুম রোস্তম আলী মন্ডল">
-                    <span>মরহুম রোস্তম আলী মন্ডল</span>
-                  </div>
-                </li>
+<ul><li>
+                                  
+ <div class="member" onclick="toggleBranch(this)">
+  <img src="images/om.jpg"?text=মরহুম ইসমাইল মোড়ল" 
+   alt="মরহুম ইসমাইল মোড়ল"><span>মরহুম ইসমাইল মোড়ল</span>
+                                                                                      
+</div>  
+     
+
+        
 
 
-<ul><li>      
+
+
+<ul><li>
+                          <div class="member" onclick="toggleBranch(this)">
+                          <img src="images/om.jpg"?text=মরহুম রোস্তম আলী মন্ডল " 
+                          alt="মরহুম রোস্তম আলী মন্ডল "><span>মরহুম রোস্তম আলী মন্ডল </span>
+                                                                                  </div>
+
+                        
+
+
+<ul><li>
 
             <div class="member" onclick="toggleBranch(this)">
             <img src="images/of.jpg"?text=মোসা:আম্বিয়া খাতুন " 
@@ -64,7 +148,6 @@
             <img src="images/cm.jpg"?text=১ছেলে" 
              alt="১ছেলে"><span>১ছেলে</span>
             </div>
-            </li>
 
 
 
@@ -301,18 +384,6 @@
             </div>
   
 
-                     
-            <li>
-            <div class="member" onclick="toggleBranch(this)">
-            <img src="images/cm.jpg"?text=ছেলে" 
-             alt="ছেলে"><span>ছেলে</span>
-            </div>
-            <li>
-            <div class="member" onclick="toggleBranch(this)">
-            <img src="images/cf.jpg"?text=কন্যা" 
-             alt="কন্যা"><span>কন্যা</span>
-            </div></li>
-
 
 
 </li></ul></li></li>
@@ -404,8 +475,7 @@
                      
 
 
-</ul></li></ul>
-
+</ul></li>
                                               
 </ul>
 </ul>
@@ -423,22 +493,53 @@
        
 
 
-<ul><li>       <span><img src="m.jpg">মাহফুজ মন্ডল </span>
-<ul><li>       <span><img src="ononna.jpg">অণ্ণনা</span>
-                <li><span><img src="cm.jpg">মোয়াজ</span></li>
+<ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/muaj.jpg"?text= মাহফুজ মন্ডল" alt="মাহফুজ মন্ডল"><span>মাহফুজ মন্ডল</span>
+                                                     </div>
+
+<ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/ononna.jpg"?text= অণ্ণনা" alt="অণ্ণনা"><span>অণ্ণনা</span>
+                                                     </div>
+
+                <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/muaj.jpg"?text= মোয়াজ" alt="মোয়াজ"><span>মোয়াজ</span>
+                                                     </div>
+
+</li>
                       </li></ul>
               
 
                    
-           <li>    <span><img src="kohinoor.jpg">মোসা:কোহিনূর আক্তার</span>
-           <ul><li>   <span><img src="cm.jpg">1 ছেলে</span>
-                      <li><span><img src="cm.jpg">দুই ছেলে</span></li>
-                      </li></ul></li>
+           <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/kohinoor.jpg"?text= মোসা:কোহিনূর আক্তার" alt="মোসা:কোহিনূর আক্তার"><span>মোসা:কোহিনূর আক্তার</span>
+                                                     </div>
 
-</ul>
+
+           <ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text=ছেলে" alt="ছেলে"><span>ছেলে</span>
+                                                     </div>
+
+                      <li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text=ছেলে" alt="ছেলে"><span>ছেলে</span>
+                                                     </div>
 </li>
+</li>
+                  
+                                  
 
-      
+
+                
+ </ul>
+ </li>
+ </ul>
+ </li>
                <li>   
             <div class="member" onclick="toggleBranch(this)">
             <img src="images/of.jpg"?text=মোসা:আনোয়ারা খাতুন" alt="মোসা:আনোয়ারা খাতুন"><span>মোসা:আনোয়ারা খাতুন</span>
@@ -446,24 +547,76 @@
 
 
 
-              <ul><li>       <span><img src="alomgir.jpg">মো:আলমগীর হোসাইন</span>
-              <ul><li>       <span><img src="f.jpg">আঁখি </span>
-                  <ul>       <li><span><img src="cf.jpg">রাহা</span></li>
-                             <li><span><img src="cf.jpg">রাইন</span></li>
-                             <li><span><img src="cm.jpg">মোহাম্মদ</span></li>
+              <ul><li> 
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/alomgir.jpg"?text=মো:আলমগীর হোসাইন" alt="মো:আলমগীর হোসাইন"><span>মো:আলমগীর হোসাইন</span>
+                                                     </div>
+
+              <ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/f.jpg"?text=আঁখি" alt="আঁখি"><span>আঁখি</span>
+                                                     </div>
+                  <ul> 
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text=রাহা" alt="রাহা"><span>রাহা</span>
+                                                     </div></li>
+    
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cf.jpg"?text=রাইন" alt="রাইন"><span>রাইন</span>
+                                                     </div></li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text=মোহাম্মদ" alt="মোহাম্মদ"><span>মোহাম্মদ</span>
+                                                     </div></li>
                              </li></ul>
 
-                             <li><span><img src="aullah.jpg">মো:আশিক উল্লাহ</span></li>
-                             <li><span><img src="f.jpg">রাখি</span>
-                  <ul>       <li><span><img src="cf.jpg">আয়েশা</span></li>
+                             <li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/aullah.jpg"?text=মো:আশিক উল্লাহ" alt="মো:আশিক উল্লাহ"><span>মো:আশিক উল্লাহ</span>
+                                                     </div>
+
+                                <ul><li>            <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text=ছেলে" alt="ছেলে"><span>ছেলে</span>
+                                                     </div>
+                             <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text=ছেলে" alt="ছেলে"><span>ছেলে</span>
+                                                     </div>
+                             </li></ul></li>
+                             <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/f.jpg"?text=রাখি" alt="রাখি"><span>রাখি</span>
+                                                     </div>
+
+                  <ul>       <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cf.jpg"?text=আয়েশা" alt="আয়েশা"><span>আয়েশা</span>
+</li>
                              </ul></li></ul></li>
               
 
                    
-               <li>         <span><img src="jahangir.jpg">মো: জাহাঙ্গীর হোসাইন</span>
-            <ul><li>        <span><img src="cm.jpg">সুমাইয়া</span>
-                            <li><span><img src="cf.jpg">জুহাইনা</span>
-                  <ul>       <li><span><img src="cf.jpg">ইসমাইল</span></li>
+               <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/jahangir.jpg"?text=মো: জাহাঙ্গীর হোসাইন" alt="মো: জাহাঙ্গীর হোসাইন"><span>মো: জাহাঙ্গীর হোসাইন</span>
+                                                     </div>
+ 
+            <ul><li> 
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text=সুমাইয়া" alt="সুমাইয়া"><span>সুমাইয়া</span>
+                                                     </div>
+
+                            <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cf.jpg"?text=জুহাইনা" alt="জুহাইনা"><span>জুহাইনা</span>
+                                                     </div>
+<span><img src="cf.jpg"></span>
+                  <ul>       <li>
+
+<span><img src="cf.jpg">ইসমাইল</span></li>
                              <li><span><img src="cf.jpg">এক মেয়ে</span></li>
 
                              </ul></li>
@@ -541,28 +694,63 @@
 
           
 
-          <ul> <li>         <span><img src="monir.jpg">মনির মন্ডল</span>
-          <ul> <li>         <span><img src="mokib.jpg"> রেদুয়ান হোসেন মকিব</span>
-                            <li><span><img src="marowan.jpg">মারওয়ান হোসেন</span></li>
-                            </li></ul></li>
+          <ul> <li>  
+            <div class="member" onclick="toggleBranch(this)">
+            <img src="images/monir.jpg"?text=মনির মন্ডল" alt="মনির মন্ডল"><span>মনির মন্ডল</span>
+            </div>
+       
+
+          <ul> <li>
+            <div class="member" onclick="toggleBranch(this)">
+            <img src="images/mokib.jpg"?text=রেদুয়ান হোসেন মকিব" alt="রেদুয়ান হোসেন মকিব"><span>রেদুয়ান হোসেন মকিব</span>
+            </div>
 
 
-            <li>            <span><img src="f.jpg">মরিয়ম </span>
+                            <li>
+            <div class="member" onclick="toggleBranch(this)">
+            <img src="images/maowan.jpg"?text=মারওয়ান হোসেন" alt="মারওয়ান হোসেন"><span>মারওয়ান হোসেন</span>
+            </div>
 
-            <ul><li>          <span><img src="cm.jpg">ছেলে</span>
-                              <li><span><img src="cf.jpg"> দুই ছেলে</span></li>
-                              </li></ul>
+
+ 
+                      </li></ul></li>
+
+
+            <li> 
+            <div class="member" onclick="toggleBranch(this)">
+            <img src="images/f.jpg"?text=মরিয়ম" alt="মরিয়ম"><span>মরিয়ম</span>
+            </div>
+
+
+
+
+            <ul><li> 
+
+
+            <div class="member" onclick="toggleBranch(this)">
+            <img src="images/cm.jpg"?text=ছেলে" alt="ছেলে"><span>ছেলে</span>
+            </div>
+
+ 
+                              <li>
+
+            <div class="member" onclick="toggleBranch(this)">
+            <img src="images/cm.jpg"?text=ছেলে" alt="ছেলে"><span>ছেলে</span>
+            </div>
+</li>
+                  
+                                  
+
+
+ </ul>
+ </li>                
  </ul>
  </li>
  </ul>
  </li>
- </li>
-
-
-
 
                 
-<li>
+<ul><li>
             <div class="member" onclick="toggleBranch(this)">
             <img src="images/om.jpg"?text=মরহুম হুরমত আলী মন্ডল" alt="মরহুম হুরমত আলী মন্ডল"><span>মরহুম হুরমত আলী মন্ডল</span>
             </div>
@@ -571,7 +759,10 @@
 
 
 
-                                  <ul><li>         <span><img src="of.jpg">মোসা:খুদেজা বেগম</span>
+                                  <ul><li>
+
+
+         <span><img src="of.jpg">মোসা:খুদেজা বেগম</span>
                 
                                   <ul><li>       <span><img src="kofil.jpg">মরহুম কফিল উদ্দিন</span>
                     
@@ -662,10 +853,16 @@
                    <li>              <span><img src="shimul.jpg">শিমুল আক্তার</span>
                                        
                    <ul>              <li><span><img src="shimul1.jpg">সুবহা</span></li>
-                                         </li></ul>
+</li>
+                  
+                                  
+
+
+                
  </ul>
  </li>
-
+ </ul>
+ </li>
 
 
 
@@ -788,8 +985,7 @@
                   <li>              <span><img src="iqbal.jpg">নাম জানি না</span>
 
                   <ul><li>       <span><img src=".jpg"></span>
-                                 <li><span><img src=".jpg"></span></li>
-                                 </li></ul></li>                    
+                                 <li><span><img src=".jpg"></span>                                 </li></ul></li>                    
   
 
                               
@@ -1265,20 +1461,55 @@
 
 
           
-                 <ul><li>              <span><img src=".jpg">ইদ্দিছ</span>
+                 <ul><li>
 
-                   <ul><li>            <span><img src="arif.jpg">...</span>
-                   <ul><li>            <span><img src=".jpg">....</span>
-                   <li>                <span><img src=".jpg">...</span></li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= ইদ্দিছ" alt=" ইদ্দিছ"><span>ইদ্দিছ</span>
+                                                     </div>
+
+                   <ul><li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+                   <ul><li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+                   <li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+
                                        </li></ul></li>
                   
 
-                   <li>         <span><img src="shorif.jpg">....</span>
-                   <ul><li>     <span><img src=".jpg">....</span>
-                   <li>         <span><img src=".jpg">...</span></li>
+                   <li> 
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+                   <ul><li> 
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+                   <li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+</li>
                                    </li></ul></li>
 
-                   <li>      <span><img src="rashed.jpg">...</span> </li>
+                   <li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+ </li>
                              
 
 
@@ -1289,19 +1520,41 @@
 
       
 
-                   <li>             <span><img src=".jpg">বাদল </span>        
+                   <li>             
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text=বাদল  " alt="বাদল "><span>বাদল </span>
+                                                     </div>
+   
                
 
 
-                   <ul><li>         <span><img src="jhinuk.jpg">... </span>
-                   <ul><li>         <span><img src=".jpg">...</span> </li>
+                   <ul><li>         
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+                   <ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+
+ </li>
                                     </li></ul>
 
 
 
 
-                  <li>             <span><img src=".jpg">...</span>
-                  <ul><li>         <span><img src=".jpg">....</span></li>
+                  <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>
+                  <ul><li>
+
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+</li>
                                     </li></ul>
 
                                   
@@ -1324,20 +1577,60 @@
               </div> 
 
           
-                 <ul><li>              <span><img src=".jpg">ইদ্দিছ মন্ডল</span>
+                 <ul><li>
 
-                   <ul><li>            <span><img src="arif.jpg">...</span>
-                   <ul><li>            <span><img src=".jpg">....</span>
-                   <li>                <span><img src=".jpg">...</span></li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text=ইদ্দিছ মন্ডল " alt="ইদ্দিছ মন্ডল"><span>ইদ্দিছ মন্ডল</span>
+                                                     </div> 
+
+
+                   <ul><li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+
+                   <ul><li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                   <li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+</li>
                                        </li></ul></li>
                   
 
-                   <li>         <span><img src="shorif.jpg">....</span>
-                   <ul><li>     <span><img src=".jpg">....</span>
-                   <li>         <span><img src=".jpg">...</span></li>
+                   <li> 
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+
+                   <ul><li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                   <li>
+
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+</li>
                                    </li></ul></li>
 
-                   <li>      <span><img src=".jpg">...</span> </li>
+                   <li>
+
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div>  
+
+</li>
                              
 
 
@@ -1348,20 +1641,38 @@
 
       
 
-                   <li>             <span><img src=".jpg">সুলাইমান মন্ডল</span>        
-               
-
-
-                   <ul><li>         <span><img src=".jpg">... </span>
-                   <ul><li>         <span><img src=".jpg">...</span> </li>
-                                    </li></ul>
+                   <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= সুলাইমান মন্ডল" alt="সুলাইমান মন্ডল"><span>সুলাইমান মন্ডল</span>
+                                                     </div> 
 
 
 
+                   <ul><li>
 
-                  <li>             <span><img src=".jpg">...</span>
-                  <ul><li>         <span><img src=".jpg">....</span></li>
-                                    </li></ul>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                   <ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+
+                                                       </li></li></ul>
+
+
+
+
+                  <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                  <ul><li> 
+
+                                                     <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                            </li></li></ul>
 
                                   
 
@@ -1371,19 +1682,43 @@
 
       
 
-                   <li>             <span><img src=".jpg">লোকমান মন্ডল</span>        
+                   <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= লোকমান মন্ডল" alt="লোকমান মন্ডল"><span>লোকমান মন্ডল</span>
+                                                     </div> 
+       
                
 
 
-                   <ul><li>         <span><img src=".jpg">... </span>
-                   <ul><li>         <span><img src=".jpg">...</span> </li>
+                   <ul><li> 
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                   <ul><li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+
+</li>
                                     </li></ul>
 
 
 
 
-                  <li>             <span><img src=".jpg">...</span>
-                  <ul><li>         <span><img src=".jpg">....</span></li>
+                  <li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                  <ul><li>
+
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+
+</li>
                                     </li></ul>
 
 
@@ -1393,19 +1728,38 @@
 
       
 
-                   <li>             <span><img src=".jpg">সরাফত মন্ডল</span>        
+                   <li> 
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/m.jpg"?text= সরাফত মন্ডল" alt="সরাফত মন্ডল"><span>সরাফত মন্ডল</span>
+                                                     </div> 
+       
                
 
 
-                   <ul><li>         <span><img src=".jpg">... </span>
-                   <ul><li>         <span><img src=".jpg">...</span> </li>
+                   <ul><li>         
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                   <ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                                      </li>
                                     </li></ul>
 
 
 
 
-                  <li>             <span><img src=".jpg">...</span>
-                  <ul><li>         <span><img src=".jpg">....</span></li>
+                  <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                  <ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+
+</li>
                                     </li></ul>
 
 
@@ -1417,19 +1771,40 @@
 
       
 
-                   <li>             <span><img src=".jpg">বোন-নাম জানা নাই</span>        
+                   <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/f.jpg"?text= " alt=" "><span>বোন-নাম জানা নাই</span>
+                                                     </div> 
+      
                
 
 
-                   <ul><li>         <span><img src=".jpg">... </span>
-                   <ul><li>         <span><img src=".jpg">...</span> </li>
+                   <ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                   <ul><li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+                    </li>
                                     </li></ul>
 
 
 
 
-                  <li>             <span><img src=".jpg">...</span>
-                  <ul><li>         <span><img src=".jpg">....</span></li>
+                  <li>
+                                                    <div class="member" onclick="toggleBranch(this)">
+                                                    <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                                                     </div> 
+   
+                  <ul><li>
+
+                 <div class="member" onclick="toggleBranch(this)">
+                  <img src="images/cm.jpg"?text= " alt=" "><span> </span>
+                  </div> 
+   
+</li>
                                     </li></ul>
 </ul>
 </li>
@@ -1705,31 +2080,23 @@
             <img src="images/m.jpg"?text=রাশেদ" alt="রাশেদ"><span>রাশেদ</span>
             </div> 
 
-                  
-                  
-                  </div>
-                </li>
+                                 </li></ul></li>                    
+  
 
-              </ul>
-            </li>
-          </ul>
+                              
+ </ul>
+ </li>
+ </ul>
+ </li>
+</li></ul>
 
-        </li>
-      </ul>
-    </div>
-  </div>
+<script>
+function toggleBranch(el) {
+  const parentLi = el.closest("li");
+  const nextUl = parentLi.querySelector(":scope > ul");
+  if (nextUl) nextUl.classList.toggle("hidden");
+}
+</script>
 
-
-  <script src="transliterate.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
